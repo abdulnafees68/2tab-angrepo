@@ -1,0 +1,47 @@
+body {
+    background-color: #f0f0f0; /* Light grey background */
+    margin: 0; /* Remove default body margin */
+    height: 100vh; /* Make body take up full viewport height */
+    display: flex; /* Use flexbox for vertical centering */
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto; /* Push buttons to the vertical center */
+    margin-bottom: auto; /* Push buttons to the vertical center */
+  }
+  
+  button {
+    padding: 12px 24px;
+    margin: 0 12px;
+    border: 1px solid #ccc; /* Add a light border */
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #ffffff; /* White button background */
+    color: #333; /* Dark grey text */
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e0e0e0; /* Slightly darker on hover */
+  }
+  
+  /* Optional: Style the router-outlet content */
+  :host ::ng-deep router-outlet + * {
+    text-align: center;
+    margin-top: 20px;
+    font-family: sans-serif;
+  }
+  
+  :host ::ng-deep h1 {
+    color: #333;
+  }
+  
+  :host ::ng-deep p {
+    color: #555;
+  }
